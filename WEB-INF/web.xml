@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+	<session-config>
+		<session-timeout>
+			30
+		</session-timeout>
+	</session-config>
+	<welcome-file-list>
+		<welcome-file>
+			index.html
+		</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>servlet_upload</servlet-name>
+		<servlet-class>servlet_upload</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>servlet_upload</servlet-name>
+		<url-pattern>/servlet/servlet-upload</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>asm32_article_web_servlet</servlet-name>
+		<servlet-class>asm32_article_web_servlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>asm32_article_web_servlet</servlet-name>
+		<url-pattern>/servlet/asm32-article-web-servlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
